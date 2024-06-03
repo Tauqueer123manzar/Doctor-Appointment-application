@@ -1,7 +1,26 @@
 import express from 'express'
 import { config } from 'dotenv';
-
+import cors from 'cors';
+import cookieParser from 'cookie-parser';
+import { dbconnection} from './Database/dbconnection.js';
+import fileUpload from 'express-fileupload';
 const app=express();
 config({path:"./config/config.env"});
 
-export default app
+                    //    Middleware
+app.use(
+    cors({
+        origin:[process.env.FRONTEND_URL,process.env.DASHBOARD_URL],
+        methods:['GET','POST','PUT','DELETE'],
+        credentials:true
+    })
+);
+app.use(cookieParser());
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+app.use(fileUpload({
+    useTempFiles:true,
+    tempFileDir:'/tmp/'
+}));
+dbconnection()
+export default app;
