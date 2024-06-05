@@ -1,6 +1,6 @@
-import {Message} from '../models/messageSchema.js'
+import { Message } from '../models/messageSchema.js';
 
-export const sendMessage=async(req,res,next)=>{
+export const messageController=async(req,res,next)=>{
     console.log('Request body:',req.body);
     const{firstname,lastname,Email,Phone,message}=req.body;
     if(!firstname || !lastname || !Email || !Phone || !message){

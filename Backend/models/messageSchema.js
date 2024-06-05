@@ -31,4 +31,4 @@ const messageSchmea=new mongoose.Schema({
 });
 
 const Message = mongoose.model("Message",messageSchmea);
-module.exports=Message;
+export { Message };

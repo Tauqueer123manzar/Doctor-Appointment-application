@@ -7,6 +7,10 @@ cloudinary.v2.config({
     api_secret:process.env.CLOUDINARY_API_SECRET,
 })
 
+app.get('/login',(req,res)=>{
+    res.send("Login is there");
+});
+
 app.listen(process.env.PORT,()=>{
     console.log(`Server is runing on port ${process.env.PORT}`)
 });
