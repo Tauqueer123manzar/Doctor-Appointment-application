@@ -1,5 +1,5 @@
 .hero_section{
-  background-color: rgb(235, 227, 209);
+  width: 100%;
 }
 @keyframes fadIn{
  from{
@@ -12,5 +12,9 @@
  }
 }
 .hero_image{
-  animation: fadIn 1s ease-in-out;
+  animation: fadIn 1s infinite alternate ease-in-out;
+}
+
+.biography_image{
+  
 }
