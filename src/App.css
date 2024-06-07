@@ -1,0 +1,16 @@
+.hero_section{
+  background-color: rgb(235, 227, 209);
+}
+@keyframes fadIn{
+ from{
+  opacity: 0;
+  transform: translateX(-50px) translateY(-50px) translateZ(-50px);
+ }
+ To{
+  opacity: 1;
+  transform: translateX(0);
+ }
+}
+.hero_image{
+  animation: fadIn 1s ease-in-out;
+}
