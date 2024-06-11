@@ -72,7 +72,7 @@ const MessageForm = () => {
 
             <Row className='d-flex justify-content-center p-2'>
             <Col xs='auto'>
-              <Button variant='primary' type='Send' style={{width:"150px"}}>
+              <Button variant='primary' type='submit' style={{width:"150px"}}>
                 Send
               </Button>
             </Col>

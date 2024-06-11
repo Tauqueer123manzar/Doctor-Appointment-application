@@ -18,7 +18,9 @@
 .container.departments {
   padding: 20px;
 }
-
+/* .biography{
+  background-color: rgb(209, 209, 209);
+} */
 .department-card {
   display: flex;
   flex-direction: column;
@@ -45,6 +47,13 @@
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* .hero_section{
+  background-color: rgb(209, 209, 209);
+}
 .message{
   background-color: rgb(209, 209, 209);
 }
+.navbar{
+  background-color: rgb(209, 209, 209);
+} */

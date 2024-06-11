@@ -4,9 +4,11 @@ import Biography from '../components/Biography';
 import Department from '../components/Department';
 import MessageForm from '../components/MessageForm';
 import heroimage from '../assets/hero (1).png';
+import Topbar from '../components/Topbar';
 const Home = () => {
   return (
     <div>
+     <Topbar/>
       <Hero
         title={
           "Welcome to Zeecare Medical Institute | Your Trusted Healthcare Provider"
