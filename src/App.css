@@ -47,7 +47,9 @@
   object-fit: cover;
   border-radius: 8px;
 }
-
+.message{
+  background-color: rgb(209, 209, 209);
+}
 /* .hero_section{
   background-color: rgb(209, 209, 209);
 }
